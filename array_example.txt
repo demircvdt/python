@@ -1,0 +1,21 @@
+//  Bir metindeki 'ak' dizi katarýnýn kaç tane olduðunu bulan program. 
+#include <stdio.h>
+
+int adet;
+
+void main(){
+
+  char dizi[100];
+  int i;
+
+  printf("Bir ifade yazin\n");
+  gets_s(dizi);
+
+  for (i = 0; dizi[i] != '/0'; i++){
+	if (dizi[i] == 'a')
+          if (dizi[i+1] == 'k')
+	   adet++;
+	}
+  printf("ifadede %d kadar ak katari vardir", adet);
+
+}
