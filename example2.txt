@@ -1,0 +1,20 @@
+#The program that calculates the factorial of numbers until the 'X' is entered from the keyboard.
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+toplam = 0
+sayac = 0
+while 1:   # Þart hep doðru - sonsuz döngü
+    sayi = raw_input("Bir sayý girin (bitirmek için x'e basýn): ")
+    if sayi == 'x':
+        break
+    y = int(sayi)
+    def factorial(y):
+      fact = 1
+      for i in range(1,y+1):
+          fact*=i
+      return fact
+    print "Sonuc ",factorial(y)
+    toplam+=factorial(y)
+    sayac+=1
+print "Toplam:", toplam
+print "Tur sayýsý:",sayac
