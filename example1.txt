@@ -1,0 +1,12 @@
+#A function that gathers the digits of an entered number.
+# -*-coding: utf-8 -*-
+
+sayi = input("Bir sayi giriniz : ")
+
+def bul(sayi):
+    toplam = 0
+    while sayi>0:
+      toplam += sayi % 10
+      sayi=sayi/10
+    return toplam
+print "toplam =", bul(sayi)
